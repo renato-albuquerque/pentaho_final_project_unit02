@@ -18,5 +18,6 @@ Em desenvolvimento.
 
 ### 3.1 Conectar o Pentaho com o PostgreSQL (bd stage_sql).
 
-### 3.2 Transformação (ktr) no Pentaho & Check dos dados inseridos no PostgreSQL, schema public, tabela cargo:
-
+### 3.2 Transformação (ktr) no Pentaho (Cago.csv) & Inserção dos dados no PostgreSQL (schema public, tabela stg_cargo):
+![screenshot](/images/pentaho_stg_cargo.png) <br>
+![screenshot](/images/postgresql_stg_cargo.png) <br>
