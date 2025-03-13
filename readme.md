@@ -21,3 +21,7 @@ Em desenvolvimento.
 ### 3.2 Transformação (ktr) no Pentaho (Cago.csv) & Inserção dos dados no PostgreSQL (schema public, tabela stg_cargo):
 ![screenshot](/images/pentaho_stg_cargo.png) <br>
 ![screenshot](/images/postgresql_stg_cargo.png) <br>
+
+### 3.3 Transformação (ktr) no Pentaho (Departamento.csv) & Inserção dos dados no PostgreSQL (schema public, tabela stg_departamento):
+![screenshot](/images/pentaho_stg_departamento.png) <br>
+![screenshot](/images/postgresql_stg_departamento.png) <br>
