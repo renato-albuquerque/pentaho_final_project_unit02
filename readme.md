@@ -30,3 +30,7 @@ Em desenvolvimento.
 ![screenshot](/images/pentaho_stg_divisao.png) <br>
 ![screenshot](/images/postgresql_stg_divisao.png) <br>
 
+### 3.5 Transformação (ktr) no Pentaho (Funcionario.csv) & Inserção dos dados no PostgreSQL (schema public, tabela stg_funcionario):
+![screenshot](/images/pentaho_stg_funcionario.png) <br>
+![screenshot](/images/postgresql_stg_funcionario.png) <br>
+
