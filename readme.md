@@ -1,6 +1,6 @@
 # Projeto Final Unidade 02 | PENTAHO (PDI) | Data Analytics | Digital College Brasil
 
-Desenvolvimento de Projeto de Banco de Dados, desde o `RESTORE do bd` até a entrega do `DASHBOARD`.<br>
+Desenvolvimento de Projeto de Banco de Dados, entrega de uma solução de BI. Desde o `RESTORE do bd` até o `DASHBOARD`.<br>
 Tecnologias utilizadas: SQL / PostgreSQL / Pentaho / Microsoft Power BI.<br> 
 
 Instituição: [Digital College Brasil](https://digitalcollege.com.br/) (Fortaleza/CE) <br>
@@ -8,7 +8,7 @@ Curso: Data Analytics (Turma 18) <br>
 Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 
 ## Arquitetura do Projeto
-Em desenvolvimento.
+![screenshot](/images/arquitetura_projeto.png) <br>
 
 ## 1. Criar BD no PostgreSQL
 
