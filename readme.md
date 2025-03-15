@@ -34,3 +34,7 @@ Em desenvolvimento.
 ![screenshot](/images/pentaho_stg_funcionario.png) <br>
 ![screenshot](/images/postgresql_stg_funcionario.png) <br>
 
+### 3.6 Transformação (ktr) no Pentaho (Folha_de_Pagamento.csv) & Inserção dos dados no PostgreSQL (schema public, tabela stg_folha_pagamento):
+![screenshot](/images/pentaho_stg_folha_pagamento.png) <br>
+![screenshot](/images/postgresql_stg_folha_pagamento.png) <br>
+
