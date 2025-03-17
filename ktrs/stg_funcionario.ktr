@@ -510,6 +510,28 @@ TUPP</note>
       <bordercolorblue>100</bordercolorblue>
       <drawshadow>Y</drawshadow>
     </notepad>
+    <notepad>
+      <note>Mostrar apenas
+3 colunas</note>
+      <xloc>704</xloc>
+      <yloc>112</yloc>
+      <width>92</width>
+      <heigth>42</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
   </notepads>
   <connection>
     <name>stage_sql</name>
@@ -765,7 +787,7 @@ TUPP</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>688</xloc>
+      <xloc>736</xloc>
       <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
@@ -874,7 +896,7 @@ TUPP</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>832</xloc>
+      <xloc>896</xloc>
       <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
