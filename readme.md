@@ -18,23 +18,22 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 
 ### 3.1 Conectar o Pentaho com o PostgreSQL (bd stage_sql).
 
-### 3.2 Transformação (ktr) no Pentaho (Cago.csv) & Inserção dos dados no PostgreSQL (schema public, tabela stg_cargo):
+### 3.2 Transformação (ktr) no Pentaho `(Cago.csv)` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_cargo`):
 ![screenshot](/images/pentaho_stg_cargo.png) <br>
 ![screenshot](/images/postgresql_stg_cargo.png) <br>
 
-### 3.3 Transformação (ktr) no Pentaho (Departamento.csv) & Inserção dos dados no PostgreSQL (schema public, tabela stg_departamento):
+### 3.3 Transformação (ktr) no Pentaho `(Departamento.csv)` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_departamento`):
 ![screenshot](/images/pentaho_stg_departamento.png) <br>
 ![screenshot](/images/postgresql_stg_departamento.png) <br>
 
-### 3.4 Transformação (ktr) no Pentaho (Divisao.csv) & Inserção dos dados no PostgreSQL (schema public, tabela stg_divisao):
+### 3.4 Transformação (ktr) no Pentaho `(Divisao.csv)` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_divisao`):
 ![screenshot](/images/pentaho_stg_divisao.png) <br>
 ![screenshot](/images/postgresql_stg_divisao.png) <br>
 
-### 3.5 Transformação (ktr) no Pentaho (Funcionario.csv) & Inserção dos dados no PostgreSQL (schema public, tabela stg_funcionario):
+### 3.5 Transformação (ktr) no Pentaho `(Funcionario.csv)` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_funcionario`):
 ![screenshot](/images/pentaho_stg_funcionario.png) <br>
 ![screenshot](/images/postgresql_stg_funcionario.png) <br>
 
-### 3.6 Transformação (ktr) no Pentaho (Folha_de_Pagamento.csv) & Inserção dos dados no PostgreSQL (schema public, tabela stg_folha_pagamento):
+### 3.6 Transformação (ktr) no Pentaho `(Folha_de_Pagamento.csv)` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_folha_pagamento`):
 ![screenshot](/images/pentaho_stg_folha_pagamento.png) <br>
 ![screenshot](/images/postgresql_stg_folha_pagamento.png) <br>
-
