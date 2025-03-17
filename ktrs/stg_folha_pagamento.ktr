@@ -430,10 +430,57 @@
     <created_date>2025/03/13 23:53:00.367</created_date>
     <modified_user>-</modified_user>
     <modified_date>2025/03/13 23:53:00.367</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
+    <notepad>
+      <note>Adicionar
+id_folha_pagamento</note>
+      <xloc>224</xloc>
+      <yloc>64</yloc>
+      <width>119</width>
+      <heigth>42</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Ordenar colunas e
+alterar tipo de dado
+coluna Data:
+String para Date
+dd/MM/yy</note>
+      <xloc>336</xloc>
+      <yloc>224</yloc>
+      <width>114</width>
+      <heigth>90</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
   </notepads>
   <connection>
     <name>stage_sql</name>
@@ -507,6 +554,41 @@
       <enabled>Y</enabled>
     </hop>
   </order>
+  <step>
+    <name>Add sequence</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <valuename>id_folha_pagamento</valuename>
+    <use_database>N</use_database>
+    <connection>stage_sql</connection>
+    <schema>public</schema>
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name/>
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>999999999</max_value>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>272</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
   <step>
     <name>CSV file input - folha_de _Pagamento</name>
     <type>CsvInput</type>
@@ -610,7 +692,7 @@
     </remotesteps>
     <GUI>
       <xloc>112</xloc>
-      <yloc>96</yloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -628,31 +710,24 @@
     <fields>
       <field>
         <name>id_folha_pagamento</name>
-        <rename/>
       </field>
       <field>
         <name>﻿Funcionario</name>
-        <rename/>
       </field>
       <field>
         <name>Divisao</name>
-        <rename/>
       </field>
       <field>
         <name>Cargo</name>
-        <rename/>
       </field>
       <field>
         <name>Departamento</name>
-        <rename/>
       </field>
       <field>
         <name>Data</name>
-        <rename/>
       </field>
       <field>
         <name>Sal·rio</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>
@@ -683,42 +758,7 @@
     </remotesteps>
     <GUI>
       <xloc>368</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Add sequence</name>
-    <type>Sequence</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <valuename>id_folha_pagamento</valuename>
-    <use_database>N</use_database>
-    <connection>stage_sql</connection>
-    <schema>public</schema>
-    <seqname>SEQ_</seqname>
-    <use_counter>Y</use_counter>
-    <counter_name/>
-    <start_at>1</start_at>
-    <increment_by>1</increment_by>
-    <max_value>999999999</max_value>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>272</xloc>
-      <yloc>96</yloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -790,7 +830,7 @@
     </remotesteps>
     <GUI>
       <xloc>512</xloc>
-      <yloc>96</yloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
