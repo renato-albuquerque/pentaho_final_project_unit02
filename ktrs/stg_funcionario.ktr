@@ -430,10 +430,86 @@
     <created_date>2025/03/13 23:21:11.110</created_date>
     <modified_user>-</modified_user>
     <modified_date>2025/03/13 23:21:11.110</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
+    <notepad>
+      <note>Retirar acentos</note>
+      <xloc>240</xloc>
+      <yloc>112</yloc>
+      <width>89</width>
+      <heigth>26</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>sobrenome &amp; nome:
+Trim type: both
+upper</note>
+      <xloc>384</xloc>
+      <yloc>112</yloc>
+      <width>120</width>
+      <heigth>58</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Correção sobrenome:
+ASSUNA„O
+para 
+ASSUNCAO
+
+LAMPI„O
+para 
+LAMPIAO
+
+TUP„
+para 
+TUPP</note>
+      <xloc>544</xloc>
+      <yloc>112</yloc>
+      <width>124</width>
+      <heigth>200</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
   </notepads>
   <connection>
     <name>stage_sql</name>
@@ -497,28 +573,23 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
+      <from>Select values</from>
+      <to>Table output - stg_funcionario</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
       <from>User defined Java expression</from>
-      <to>Replace in string</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Replace in string</from>
-      <to>Replace in string 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Replace in string 2</from>
       <to>String operations</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>String operations</from>
-      <to>Select values</to>
+      <to>Replace in string</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Select values</from>
-      <to>Table output - stg_funcionario</to>
+      <from>Replace in string</from>
+      <to>Select values</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -592,48 +663,7 @@
     </remotesteps>
     <GUI>
       <xloc>112</xloc>
-      <yloc>80</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>User defined Java expression</name>
-    <type>Janino</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <formula>
-      <field_name>sobrenome_sem_acentos</field_name>
-      <formula_string>org.apache.commons.lang3.StringUtils.stripAccents(Sobrenome)</formula_string>
-      <value_type>String</value_type>
-      <value_length>-1</value_length>
-      <value_precision>-1</value_precision>
-      <replace_field/>
-    </formula>
-    <formula>
-      <field_name>nome_sem_acentos</field_name>
-      <formula_string>org.apache.commons.lang3.StringUtils.stripAccents(Nome)</formula_string>
-      <value_type>String</value_type>
-      <value_length>-1</value_length>
-      <value_precision>-1</value_precision>
-      <replace_field/>
-    </formula>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>272</xloc>
-      <yloc>80</yloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -650,10 +680,10 @@
     </partitioning>
     <fields>
       <field>
-        <in_stream_name>sobrenome_sem_acentos</in_stream_name>
-        <out_stream_name>sobrenome_corrigido</out_stream_name>
+        <in_stream_name>sobrenome_upper</in_stream_name>
+        <out_stream_name/>
         <use_regex>no</use_regex>
-        <replace_string>AssunA„o</replace_string>
+        <replace_string>ASSUNA„O</replace_string>
         <replace_by_string>ASSUNCAO</replace_by_string>
         <set_empty_string>N</set_empty_string>
         <replace_field_by_string/>
@@ -661,39 +691,24 @@
         <case_sensitive>no</case_sensitive>
         <is_unicode>no</is_unicode>
       </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>416</xloc>
-      <yloc>80</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Replace in string 2</name>
-    <type>ReplaceString</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
       <field>
-        <in_stream_name>sobrenome_corrigido</in_stream_name>
-        <out_stream_name>sobrenome_corrigido2</out_stream_name>
+        <in_stream_name>sobrenome_upper</in_stream_name>
+        <out_stream_name/>
         <use_regex>no</use_regex>
-        <replace_string>Tup„</replace_string>
-        <replace_by_string>Tup</replace_by_string>
+        <replace_string>LAMPI„O</replace_string>
+        <replace_by_string>LAMPIAO</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+      <field>
+        <in_stream_name>sobrenome_upper</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>TUP„</replace_string>
+        <replace_by_string>TUPP</replace_by_string>
         <set_empty_string>N</set_empty_string>
         <replace_field_by_string/>
         <whole_word>no</whole_word>
@@ -710,61 +725,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>528</xloc>
-      <yloc>80</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>String operations</name>
-    <type>StringOperations</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <in_stream_name>sobrenome_corrigido2</in_stream_name>
-        <out_stream_name>sobrenome_upper</out_stream_name>
-        <trim_type>both</trim_type>
-        <lower_upper>upper</lower_upper>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters/>
-      </field>
-      <field>
-        <in_stream_name>nome_sem_acentos</in_stream_name>
-        <out_stream_name>nome_upper</out_stream_name>
-        <trim_type>both</trim_type>
-        <lower_upper>upper</lower_upper>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters/>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>640</xloc>
-      <yloc>80</yloc>
+      <xloc>576</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -803,8 +765,61 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>736</xloc>
-      <yloc>80</yloc>
+      <xloc>688</xloc>
+      <yloc>32</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>String operations</name>
+    <type>StringOperations</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>sobrenome_sem_acentos</in_stream_name>
+        <out_stream_name>sobrenome_upper</out_stream_name>
+        <trim_type>both</trim_type>
+        <lower_upper>upper</lower_upper>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters/>
+      </field>
+      <field>
+        <in_stream_name>nome_sem_acentos</in_stream_name>
+        <out_stream_name>nome_upper</out_stream_name>
+        <trim_type>both</trim_type>
+        <lower_upper>upper</lower_upper>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters/>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -859,8 +874,49 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>864</xloc>
-      <yloc>80</yloc>
+      <xloc>832</xloc>
+      <yloc>32</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>User defined Java expression</name>
+    <type>Janino</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <formula>
+      <field_name>sobrenome_sem_acentos</field_name>
+      <formula_string>org.apache.commons.lang3.StringUtils.stripAccents(Sobrenome)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field/>
+    </formula>
+    <formula>
+      <field_name>nome_sem_acentos</field_name>
+      <formula_string>org.apache.commons.lang3.StringUtils.stripAccents(Nome)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field/>
+    </formula>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>272</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
