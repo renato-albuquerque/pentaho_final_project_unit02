@@ -12,7 +12,7 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 
 ## 1. Criar BD no PostgreSQL
 
-## 2. Restore do BD
+## 2. Restore do `BD STAGE`
 
 ## 3. Popular tabelas (cargo, departamento, divisao, folha_de_pagamento, funcionario) no banco de dados STAGE_SQL utilizando PENTAHO
 
@@ -37,3 +37,15 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 ### 3.6 Transformação (ktr) no Pentaho `(Folha_de_Pagamento.csv)` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_folha_pagamento`):
 ![screenshot](/images/pentaho_stg_folha_pagamento.png) <br>
 ![screenshot](/images/postgresql_stg_folha_pagamento.png) <br>
+
+## 4. Restore do `BD DW`
+
+## 5. Popular tabelas (dim_calendar, dim_departamento, dim_divisao, dim_funcionario, fat_folha_pagamento) no banco de dados `DW_SQL` utilizando PENTAHO
+
+### 5.1 Conectar o Pentaho com o PostgreSQL (bd dw_sql).
+
+### 5.2 Obs.: Tabela dim_calendar já preenchida no bd dw_sql. 
+
+### 5.3 Transformação (ktr) no Pentaho `(tabela stg_divisao)` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_divisao`):
+![screenshot](/images/pentaho_dim_divisao.png) <br>
+![screenshot](/images/postgres_dim_divisao.png) <br>
