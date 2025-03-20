@@ -45,6 +45,7 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 ### 5.1 Conectar o Pentaho com o PostgreSQL (bd dw_sql).
 
 ### 5.2 Obs.: Tabela dim_calendar já preenchida no bd dw_sql. 
+![screenshot](/images/postgresql_dim_calendar.png) <br>
 
 ### 5.3 Transformação (ktr) no Pentaho `(tabela stg_divisao)` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_divisao`):
 ![screenshot](/images/pentaho_dim_divisao.png) <br>
