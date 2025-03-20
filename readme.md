@@ -58,3 +58,7 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 ### 5.5 Transformação (ktr) no Pentaho `(tabela stg_departamento)` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_departamento`):
 ![screenshot](/images/pentaho_dim_departamento.png) <br>
 ![screenshot](/images/postgresql_dim_departamento.png) <br>
+
+### 5.5 Transformação (ktr) no Pentaho `(tabela stg_funcionario)` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_funcionario`):
+![screenshot](/images/pentaho_dim_funcionario.png) <br>
+![screenshot](/images/postgresql_dim_funcionario.png) <br>

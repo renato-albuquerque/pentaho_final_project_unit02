@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>3_pipeline_dim_divisao</name>
+    <name>dw_dim_funcionario_rma</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -427,10 +427,10 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2025/03/10 19:45:11.249</created_date>
+    <created_date>2025/03/19 23:07:52.258</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2025/03/10 19:45:11.249</modified_date>
-    <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
+    <modified_date>2025/03/19 23:07:52.258</modified_date>
+    <key_for_session_key/>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -548,72 +548,10 @@
   <order>
     <hop>
       <from>Table input</from>
-      <to>Dimension lookup/update</to>
+      <to>Dimension lookup/update - dim_funcionario</to>
       <enabled>Y</enabled>
     </hop>
   </order>
-  <step>
-    <name>Dimension lookup/update</name>
-    <type>DimensionLookup</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <schema>public</schema>
-    <table>dim_divisao</table>
-    <connection>dw_sql</connection>
-    <commit>100</commit>
-    <update>Y</update>
-    <fields>
-      <key>
-        <name>id_stg_divisao</name>
-        <lookup>nk_dim_divisao</lookup>
-      </key>
-      <date>
-        <name/>
-        <from>dt_dim_divisao_inicio</from>
-        <to>dt_dim_divisao_fim</to>
-      </date>
-      <field>
-        <name>ds_stg_divisao</name>
-        <lookup>ds_dim_divisao</lookup>
-        <update>Insert</update>
-      </field>
-      <return>
-        <name>sk_dim_divisao</name>
-        <rename/>
-        <creation_method>tablemax</creation_method>
-        <use_autoinc>N</use_autoinc>
-        <version>nr_dim_divisao_versao</version>
-      </return>
-    </fields>
-    <sequence/>
-    <min_year>1900</min_year>
-    <max_year>2199</max_year>
-    <cache_size>5000</cache_size>
-    <preload_cache>N</preload_cache>
-    <use_start_date_alternative>N</use_start_date_alternative>
-    <start_date_alternative>none</start_date_alternative>
-    <start_date_field_name/>
-    <useBatch>N</useBatch>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>352</xloc>
-      <yloc>144</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
   <step>
     <name>Table input</name>
     <type>TableInput</type>
@@ -626,8 +564,7 @@
       <schema_name/>
     </partitioning>
     <connection>stage_sql</connection>
-    <sql>SELECT id_stg_divisao, ds_stg_divisao, ts_stg_divisao_carga
-	FROM public.stg_divisao;</sql>
+    <sql>SELECT * FROM public.stg_funcionario;</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -638,11 +575,11 @@
       <value-meta>
         <type>Integer</type>
         <storagetype>normal</storagetype>
-        <name>id_stg_divisao</name>
+        <name>id_stg_funcionario</name>
         <length>9</length>
         <precision>0</precision>
         <origin>Table input</origin>
-        <comments>id_stg_divisao</comments>
+        <comments>id_stg_funcionario</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
@@ -661,11 +598,34 @@
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>ds_stg_divisao</name>
+        <name>nm_stg_funcionario</name>
         <length>200</length>
         <precision>-1</precision>
         <origin>Table input</origin>
-        <comments>ds_stg_divisao</comments>
+        <comments>nm_stg_funcionario</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>America/Buenos_Aires</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>nm_stg_funcionario_sobrenome</name>
+        <length>200</length>
+        <precision>-1</precision>
+        <origin>Table input</origin>
+        <comments>nm_stg_funcionario_sobrenome</comments>
         <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
@@ -684,11 +644,11 @@
       <value-meta>
         <type>Timestamp</type>
         <storagetype>normal</storagetype>
-        <name>ts_stg_divisao_carga</name>
+        <name>ts_stg_funcionario_carga</name>
         <length>6</length>
         <precision>-1</precision>
         <origin>Table input</origin>
-        <comments>ts_stg_divisao_carga</comments>
+        <comments>ts_stg_funcionario_carga</comments>
         <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
@@ -714,8 +674,75 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>128</xloc>
-      <yloc>144</yloc>
+      <xloc>200</xloc>
+      <yloc>100</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Dimension lookup/update - dim_funcionario</name>
+    <type>DimensionLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <schema>public</schema>
+    <table>dim_funcionario</table>
+    <connection>dw_sql</connection>
+    <commit>100</commit>
+    <update>Y</update>
+    <fields>
+      <key>
+        <name>id_stg_funcionario</name>
+        <lookup>nk_dim_funcionario</lookup>
+      </key>
+      <date>
+        <name/>
+        <from>dt_dim_funcionario_inicio</from>
+        <to>dt_dim_funcionario_fim</to>
+      </date>
+      <field>
+        <name>nm_stg_funcionario</name>
+        <lookup>nm_dim_funcionario</lookup>
+        <update>Insert</update>
+      </field>
+      <field>
+        <name>nm_stg_funcionario_sobrenome</name>
+        <lookup>nm_dim_funcionario_sobrenome</lookup>
+        <update>Insert</update>
+      </field>
+      <return>
+        <name>sk_dim_funcionario</name>
+        <rename/>
+        <creation_method>tablemax</creation_method>
+        <use_autoinc>N</use_autoinc>
+        <version>nr_dim_funcionario_versao</version>
+      </return>
+    </fields>
+    <sequence/>
+    <min_year>1900</min_year>
+    <max_year>2199</max_year>
+    <cache_size>5000</cache_size>
+    <preload_cache>N</preload_cache>
+    <use_start_date_alternative>N</use_start_date_alternative>
+    <start_date_alternative>none</start_date_alternative>
+    <start_date_field_name/>
+    <useBatch>N</useBatch>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>400</xloc>
+      <yloc>100</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
