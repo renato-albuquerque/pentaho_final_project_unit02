@@ -48,4 +48,8 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 
 ### 5.3 Transformação (ktr) no Pentaho `(tabela stg_divisao)` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_divisao`):
 ![screenshot](/images/pentaho_dim_divisao.png) <br>
-![screenshot](/images/postgres_dim_divisao.png) <br>
+![screenshot](/images/postgresql_dim_divisao.png) <br>
+
+### 5.4 Transformação (ktr) no Pentaho `(tabela stg_cargo)` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_cargo`):
+![screenshot](/images/pentaho_dim_cargo.png) <br>
+![screenshot](/images/postgresql_dim_cargo.png) <br>
