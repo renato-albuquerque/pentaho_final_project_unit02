@@ -66,3 +66,7 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 ### 5.6 Transformação (ktr) no Pentaho `(tabela stg_funcionario)` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_funcionario`):
 ![screenshot](/images/pentaho_fat_folha_pagamento.png) <br>
 ![screenshot](/images/postgresql_fat_folha_pagamento.png) <br>
+
+### 5.7 Transformação no Pentaho `(tabela stg_folha_pagamento)` para `tabela fat_folha_pagamento` & Inserção dos dados no PostgreSQL (schema public, `tabela fat_folha_pagamento`):
+![screenshot](/images/pentaho_fat_folha_pagamento.png) <br>
+![screenshot](/images/postgresql_fat_folha_pagamento.png) <br>
