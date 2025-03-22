@@ -18,23 +18,23 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 
 ### 3.1 Conectar o Pentaho com o PostgreSQL (bd stage_sql).
 
-### 3.2 Transformação (ktr) no Pentaho `(Cago.csv)` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_cargo`):
+### 3.2 (CSV para STAGE) Transformação no Pentaho `(Cago.csv)` para `tabela stg_cargo` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_cargo`):
 ![screenshot](/images/pentaho_stg_cargo.png) <br>
 ![screenshot](/images/postgresql_stg_cargo.png) <br>
 
-### 3.3 Transformação (ktr) no Pentaho `(Departamento.csv)` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_departamento`):
+### 3.3 (CSV para STAGE) Transformação no Pentaho `(Departamento.csv)` para `tabela stg_departamento` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_departamento`):
 ![screenshot](/images/pentaho_stg_departamento.png) <br>
 ![screenshot](/images/postgresql_stg_departamento.png) <br>
 
-### 3.4 Transformação (ktr) no Pentaho `(Divisao.csv)` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_divisao`):
+### 3.4 (CSV para STAGE) Transformação no Pentaho `(Divisao.csv)` para `tabela stg_divisao` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_divisao`):
 ![screenshot](/images/pentaho_stg_divisao.png) <br>
 ![screenshot](/images/postgresql_stg_divisao.png) <br>
 
-### 3.5 Transformação (ktr) no Pentaho `(Funcionario.csv)` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_funcionario`):
+### 3.5 (CSV para STAGE) Transformação no Pentaho `(Funcionario.csv)` para `tabela stg_funcionario` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_funcionario`):
 ![screenshot](/images/pentaho_stg_funcionario.png) <br>
 ![screenshot](/images/postgresql_stg_funcionario.png) <br>
 
-### 3.6 Transformação (ktr) no Pentaho `(Folha_de_Pagamento.csv)` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_folha_pagamento`):
+### 3.6 (CSV para STAGE) Transformação no Pentaho `(Folha_de_Pagamento.csv)` para `tabela stg_folha_pagamento` & Inserção dos dados no PostgreSQL (schema public, `tabela stg_folha_pagamento`):
 ![screenshot](/images/pentaho_stg_folha_pagamento.png) <br>
 ![screenshot](/images/postgresql_stg_folha_pagamento.png) <br>
 
@@ -47,26 +47,26 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 ### 5.2 Obs.: Tabela dim_calendar já preenchida no bd dw_sql. 
 ![screenshot](/images/postgresql_dim_calendar.png) <br>
 
-### 5.3 Transformação (ktr) no Pentaho `(tabela stg_divisao)` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_divisao`):
+### 5.3 (STAGE para DW) Transformação no Pentaho `(tabela stg_divisao)` para `tabela dim_divisao` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_divisao`):
 ![screenshot](/images/pentaho_dim_divisao.png) <br>
 ![screenshot](/images/postgresql_dim_divisao.png) <br>
 
-### 5.4 Transformação (ktr) no Pentaho `(tabela stg_cargo)` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_cargo`):
+### 5.4 (STAGE para DW) Transformação no Pentaho `(tabela stg_cargo)` para `tabela dim_cargo` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_cargo`):
 ![screenshot](/images/pentaho_dim_cargo.png) <br>
 ![screenshot](/images/postgresql_dim_cargo.png) <br>
 
-### 5.5 Transformação (ktr) no Pentaho `(tabela stg_departamento)` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_departamento`):
+### 5.5 (STAGE para DW) Transformação no Pentaho `(tabela stg_departamento)` para `tabela dim_departamento` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_departamento`):
 ![screenshot](/images/pentaho_dim_departamento.png) <br>
 ![screenshot](/images/postgresql_dim_departamento.png) <br>
 
-### 5.5 Transformação (ktr) no Pentaho `(tabela stg_funcionario)` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_funcionario`):
+### 5.6 (STAGE para DW) Transformação no Pentaho `(tabela stg_funcionario)` para `tabela dim_funcionario` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_funcionario`):
 ![screenshot](/images/pentaho_dim_funcionario.png) <br>
 ![screenshot](/images/postgresql_dim_funcionario.png) <br>
 
-### 5.6 Transformação (ktr) no Pentaho `(tabela stg_funcionario)` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_funcionario`):
+### 5.7 (STAGE para DW) Transformação no Pentaho `(tabela stg_funcionario)` para `tabela dim_funcionario` & Inserção dos dados no PostgreSQL (schema public, `tabela dim_funcionario`):
 ![screenshot](/images/pentaho_fat_folha_pagamento.png) <br>
 ![screenshot](/images/postgresql_fat_folha_pagamento.png) <br>
 
-### 5.7 Transformação no Pentaho `(tabela stg_folha_pagamento)` para `tabela fat_folha_pagamento` & Inserção dos dados no PostgreSQL (schema public, `tabela fat_folha_pagamento`):
+### 5.8 (STAGE para DW) Transformação no Pentaho `(tabela stg_folha_pagamento)` para `tabela fat_folha_pagamento` & Inserção dos dados no PostgreSQL (schema public, `tabela fat_folha_pagamento`):
 ![screenshot](/images/pentaho_fat_folha_pagamento.png) <br>
 ![screenshot](/images/postgresql_fat_folha_pagamento.png) <br>
