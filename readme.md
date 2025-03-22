@@ -1,6 +1,7 @@
 # Projeto Final Unidade 02 | PENTAHO (PDI) | Data Analytics | Digital College Brasil
 
-Desenvolvimento de Projeto de Banco de Dados, entrega de uma solução de BI. Desde o `RESTORE do bd` até o `DASHBOARD`.<br>
+Desenvolvimento de Projeto de Banco de Dados, entrega de uma solução de BI. <br>
+Objetivo de construir um ambiente de análise de dados a partir de arquivos CSVs, utilizando técnicas de ETL para criar o DW. O Projeto visa desenvolver análises que servirão como base para tomadas de decisões estratégicas para o negócio. <br>
 Tecnologias utilizadas: SQL / PostgreSQL / Pentaho / Microsoft Power BI.<br> 
 
 Instituição: [Digital College Brasil](https://digitalcollege.com.br/) (Fortaleza/CE) <br>
