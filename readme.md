@@ -76,7 +76,7 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 ## 6. JOBS
 (Em andamento)
 
-## 7. Análises em SQL
+## 7. Análises em SQL (KPIs)
 
 ### 7.1 TOTAL DE FUNCIONÁRIOS POR DEPARTAMENTO
 ```
