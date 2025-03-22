@@ -76,9 +76,9 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 ## 6. JOBS
 (Em andamento)
 
-## 7. Análises em SQL (KPIs)
+## 7. SQL 
 
-### 7.1 TOTAL DE FUNCIONÁRIOS POR DEPARTAMENTO
+### 7.1 (KPIs) TOTAL DE FUNCIONÁRIOS POR DEPARTAMENTO
 ```
 select dd.ds_dim_departamento as departamento, count(df.nk_dim_funcionario) as total_funcionario
 from fat_folha_pagamento fat
@@ -90,7 +90,7 @@ order by total_funcionario desc;
 ```
 ![screenshot](/images/sql_func_depart.png) <br>
 
-### 7.2 MÉDIA SALARIAL POR CARGO
+### 7.2 (KPIs) MÉDIA SALARIAL POR CARGO
 
 ```
 select ds_dim_cargo as cargo, avg(fat.vl_fat_folha_pagamento_salario)::numeric(18,2) as media_salarial
@@ -101,3 +101,16 @@ group by ds_dim_cargo
 order by media_salarial desc;
 ```
 ![screenshot](/images/sql_cargo_salario.png) <br>
+
+### 7.3 (KPIs) MÉDIA TEMPO DE EMPRESA
+
+### 7.4 (KPIs) CUSTO TOTAL FOLHA DE PAGAMENTO
+
+### 7.5 (Análises) FUNCIONÁRIOS COM MAIOR TEMPO DE EMPRESA
+
+### 7.6 (Análises) DISTRIBUIÇÃO SALARIAL POR CARGO
+
+### 7.7 (Análises) EVOLUÇÃO DO CUSTO DE FOLHA DE PAGAMENTO
+
+## 8. Dataviz com Microsoft Power BI 
+
