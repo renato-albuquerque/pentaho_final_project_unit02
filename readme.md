@@ -2,6 +2,7 @@
 
 Desenvolvimento de Projeto de Banco de Dados, entrega de uma solução de BI. <br>
 Objetivo de construir um ambiente de análise de dados a partir de arquivos CSVs, utilizando técnicas de ETL para criar o DW. O Projeto visa desenvolver análises que servirão como base para tomadas de decisões estratégicas para o negócio. <br>
+Área de negócio: RH. <br>
 Tecnologias utilizadas: SQL / PostgreSQL / Pentaho / Microsoft Power BI.<br> 
 
 Instituição: [Digital College Brasil](https://digitalcollege.com.br/) (Fortaleza/CE) <br>
