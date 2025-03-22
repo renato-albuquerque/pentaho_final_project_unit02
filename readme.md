@@ -78,14 +78,21 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 
 ## 7. Análises em SQL
 
-### 7.1 TOTAL DE FUNCIONÁRIOS POR DEPARTAMENTO:
+### 7.1 TOTAL DE FUNCIONÁRIOS POR DEPARTAMENTO
 ```
 select dd.ds_dim_departamento as departamento, count(df.nk_dim_funcionario) as total_funcionario
 from fat_folha_pagamento fat
 inner join dim_departamento dd on fat.sk_dim_departamento = dd.sk_dim_departamento
 inner join dim_funcionario df on fat.sk_dim_funcionario = df.sk_dim_funcionario
-where nk_dim_funcionario <> 0
+where df.nk_dim_funcionario <> 0
 group by dd.ds_dim_departamento
 order by total_funcionario desc;
+```
+![screenshot](/images/sql_func_depart.png) <br>
+
+### 7.2 MÉDIA SALARIAL POR CARGO
+
+```
+
 ```
 ![screenshot](/images/sql_func_depart.png) <br>
