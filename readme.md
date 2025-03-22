@@ -93,6 +93,11 @@ order by total_funcionario desc;
 ### 7.2 MÉDIA SALARIAL POR CARGO
 
 ```
-
+select ds_dim_cargo as cargo, avg(fat.vl_fat_folha_pagamento_salario)::numeric(18,2) as media_salarial
+from fat_folha_pagamento fat
+inner join dim_cargo dc on fat.sk_dim_cargo = dc.sk_dim_cargo
+where dc.nk_dim_cargo <> 0
+group by ds_dim_cargo
+order by media_salarial desc;
 ```
-![screenshot](/images/sql_func_depart.png) <br>
+![screenshot](/images/sql_cargo_salario.png) <br>
