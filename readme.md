@@ -72,3 +72,20 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 ### 5.8 (STAGE para DW) Transformação no Pentaho `(tabela stg_folha_pagamento)` para `tabela fat_folha_pagamento` & Inserção dos dados no PostgreSQL (schema public, `tabela fat_folha_pagamento`):
 ![screenshot](/images/pentaho_fat_folha_pagamento.png) <br>
 ![screenshot](/images/postgresql_fat_folha_pagamento.png) <br>
+
+## 6. JOBS
+(Em andamento)
+
+## 7. Análises em SQL
+
+### 7.1 TOTAL DE FUNCIONÁRIOS POR DEPARTAMENTO:
+```
+select dd.ds_dim_departamento as departamento, count(df.nk_dim_funcionario) as total_funcionario
+from fat_folha_pagamento fat
+inner join dim_departamento dd on fat.sk_dim_departamento = dd.sk_dim_departamento
+inner join dim_funcionario df on fat.sk_dim_funcionario = df.sk_dim_funcionario
+where nk_dim_funcionario <> 0
+group by dd.ds_dim_departamento
+order by total_funcionario desc;
+```
+![screenshot](/images/sql_func_depart.png) <br>
