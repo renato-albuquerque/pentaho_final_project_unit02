@@ -74,7 +74,11 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 ![screenshot](/images/postgresql_fat_folha_pagamento.png) <br>
 
 ## 6. JOBS
-(Em andamento)
+### STAGE
+![screenshot](/images/job_stage.png) <br>
+
+### DW
+![screenshot](/images/job_dw.png) <br>
 
 ## 7. SQL 
 
