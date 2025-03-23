@@ -102,15 +102,11 @@ order by media_salarial desc;
 ```
 ![screenshot](/images/sql_cargo_salario.png) <br>
 
-### 7.3 (KPIs) MÉDIA TEMPO DE EMPRESA
+### 7.3 (KPIs) CUSTO TOTAL FOLHA DE PAGAMENTO
 
-### 7.4 (KPIs) CUSTO TOTAL FOLHA DE PAGAMENTO
+### 7.4 (Análises) DISTRIBUIÇÃO SALARIAL POR CARGO
 
-### 7.5 (Análises) FUNCIONÁRIOS COM MAIOR TEMPO DE EMPRESA
-
-### 7.6 (Análises) DISTRIBUIÇÃO SALARIAL POR CARGO
-
-### 7.7 (Análises) EVOLUÇÃO DO CUSTO DE FOLHA DE PAGAMENTO
+### 7.5 (Análises) EVOLUÇÃO DO CUSTO DE FOLHA DE PAGAMENTO
 
 ## 8. Dataviz com Microsoft Power BI 
 
