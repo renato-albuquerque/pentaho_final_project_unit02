@@ -76,7 +76,7 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 ![screenshot](/images/pentaho_fat_folha_pagamento.png) <br>
 ![screenshot](/images/postgresql_fat_folha_pagamento.png) <br>
 
-## 7. JOBS
+## 7. JOBS no Pentaho
 ### 7.1 Automatizar inserção de dados no bd STAGE
 ![screenshot](/images/job_stage.png) <br>
 
