@@ -107,6 +107,12 @@ order by media_salarial desc;
 ![screenshot](/images/sql_cargo_salario.png) <br>
 
 ### 7.3 (KPIs) CUSTO TOTAL FOLHA DE PAGAMENTO
+```
+select sum(vl_fat_folha_pagamento_salario)::numeric(18,2) as custo_total_folha_pagamento
+from fat_folha_pagamento
+order by custo_total_folha_pagamento desc;
+```
+![screenshot](/images/sql_custo_total_fp.png) <br>
 
 ### 7.4 (Análises) DISTRIBUIÇÃO SALARIAL POR CARGO
 
