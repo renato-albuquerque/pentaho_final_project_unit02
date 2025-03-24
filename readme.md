@@ -83,7 +83,7 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 ### 7.2 Automatizar inserção de dados no bd DW
 ![screenshot](/images/job_dw.png) <br>
 
-## 8. SQL 
+## 8. Análises em SQL (PostgreSQL) 
 
 ### 8.1 (KPIs) TOTAL DE FUNCIONÁRIOS POR DEPARTAMENTO
 ```
