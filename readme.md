@@ -40,6 +40,9 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 ![screenshot](/images/pentaho_stg_folha_pagamento.png) <br>
 ![screenshot](/images/postgresql_stg_folha_pagamento.png) <br>
 
+## 4. Modelagem Lógica DW (Star Schema)
+![screenshot](/images/modeling_star_schema.png) <br>
+
 ## 4. Restore do `BD DW`
 
 ## 5. Popular tabelas (dim_calendar, dim_departamento, dim_divisao, dim_funcionario, fat_folha_pagamento) no banco de dados `DW_SQL` utilizando PENTAHO
