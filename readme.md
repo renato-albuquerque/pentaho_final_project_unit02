@@ -126,6 +126,14 @@ order by salario desc;
 ![screenshot](/images/sql_distribuicao_salario_cargo.png) <br>
 
 ### 7.5 (Análises) EVOLUÇÃO DO CUSTO DE FOLHA DE PAGAMENTO
+```
+select dca.nr_dim_calendar_month as mes, dca.nr_dim_calendar_year as ano, fat.vl_fat_folha_pagamento_salario::numeric(18,2) as custo_folha_pagamento
+from fat_folha_pagamento fat
+inner join dim_calendar dca on fat.id_dim_calendar = dca.id_dim_calendar
+group by dca.nr_dim_calendar_month, dca.nr_dim_calendar_year, fat.vl_fat_folha_pagamento_salario
+order by dca.nr_dim_calendar_month, dca.nr_dim_calendar_year;
+```
+![screenshot](/images/sql_evolucao_fp.png) <br>
 
 ## 8. Dataviz com Microsoft Power BI 
 
