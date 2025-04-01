@@ -139,4 +139,5 @@ order by dca.nr_dim_calendar_month, dca.nr_dim_calendar_year;
 ![screenshot](/images/sql_evolucao_fp.png) <br>
 
 ## 9. Dataviz com Microsoft Power BI 
+Em andamento.
 
