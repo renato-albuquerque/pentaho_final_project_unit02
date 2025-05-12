@@ -10,8 +10,7 @@ Curso: Data Analytics (Turma 18) <br>
 Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 
 ## Arquitetura do Projeto
-![screenshot](/images/arquitetura_projeto.png) <br>
-![screenshot](/images/arquitetura_projeto.png) <br>
+![screenshot](images/arquitetura_projeto.png) <br>
 
 ## 1. Criar BD no PostgreSQL
 
